@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sev'Pro Agency - Services professionnels en graphisme, rédaction, IA, CV et démarches administratives">
+  <title>Sev'Pro Agency - Solutions Professionnelles Numériques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0056b3;
+      --primary-dark: #003d7a;
+      --secondary: #ff7d00;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --gray: #6c757d;
+      --white: #ffffff;
+      --success: #28a745;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--light);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: var(--white);
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: #e67300;
+      transform: translateY(-3px);
+    }
+    header, footer, section {
+      padding: 2rem 1rem;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header .logo img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+    header .logo h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c') center/cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+    .services-grid, .testimonials-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .service-card, .testimonial-card {
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .service-img img, .author-img img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+      height: 200px;
+      object-fit: cover;
+    }
+    .service-content, .testimonial-content {
+      padding: 1rem;
+    }
+    .faq-item {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .faq-question {
+      width: 100%;
+      background: #f1f1f1;
+      padding: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .faq-answer {
+      padding: 1rem;
+      display: none;
+    }
+    .faq-answer.show {
+      display: block;
+    }
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+    }
+    .social-links a {
+      color: var(--white);
+      margin: 0 0.5rem;
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="logo">
+      <img src="https://imgur.com/c7wpqgp.png" alt="Logo Sev'Pro Agency">
+      <h1>Sev'Pro Agency</h1>
+    </div>
+    <div class="nav-links">
+      <a href="#about">À propos de nous</a>
+      <a href="#contact">Contactez-nous</a>
+      <a href="#services">Nos services</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Solutions Professionnelles sur Mesure</h1>
+    <p>Nous combinons expertise, fiabilité et accessibilité pour offrir des services de qualité adaptés à vos besoins spécifiques.</p>
+    <a href="#services" class="btn">Nos services</a>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7" alt="Graphisme"></div>
+        <div class="service-content">
+          <h3>Graphisme</h3><ul><li>Logo</li><li>Carte de visite</li><li>Affiche</li></ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85" alt="Administratif"></div>
+        <div class="service-content">
+          <h3>Services Administratifs</h3>
+          <ul>
+            <li>Acte de naissance</li>
+            <li>CIP</li>
+            <li>Casier judiciaire</li>
+            <li>Carte biométrique</li>
+            <li>Registre de commerce</li>
+            <li>Passeport biométrique</li>
+            <li>Attestation IFU</li>
+            <li>Facture normalisée</li>
+            <li>Et autres services personnalisés sur demande</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" alt="IA"></div>
+        <div class="service-content">
+          <h3>Intelligence Artificielle</h3><ul><li>Chatbots</li><li>Création images</li></ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a" alt="Rédaction"></div>
+        <div class="service-content">
+          <h3>Rédaction</h3><ul><li>Exposés</li><li>Fiches</li></ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1586282391129-76a746f67577" alt="CV"></div>
+        <div class="service-content">
+          <h3>CV Professionnels</h3><ul><li>CV optimisé</li><li>Lettre motivation</li></ul>
+        </div>
+      </div>
+    </div>
+    <a href="#request-service" class="btn">Faire une demande de service</a>
+  </section>
+
+  <section id="about" class="container">
+    <h2>À propos de nous</h2>
+    <p>Sev'Pro Agency a été fondée par Sévérin Honfogbo, un professionnel passionné par l'innovation numérique. Sous sa direction, l'entreprise s'efforce de fournir des services de haute qualité, en mettant l'accent sur la satisfaction client, l'efficacité et l'accessibilité des solutions numériques.</p>
+    <p><strong>Sévérin Honfogbo</strong> est le PDG de Sev'Pro Agency. Son expertise dans plusieurs domaines du numérique a permis à l'entreprise de se distinguer dans les services administratifs, le graphisme et l'intelligence artificielle.</p>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contactez-nous</h2>
+    <p><strong>Email :</strong> <a href="mailto:sevproagency@gmail.com">sevproagency@gmail.com</a></p>
+    <p><strong>WhatsApp :</strong> <a href="https://wa.me/2290199706172">+229 01 99 70 61 72</a></p>
+    <p><strong>Téléphone :</strong> <a href="tel:+2290199706172">+229 01 99 70 61 72</a></p>
+  </section>
+
+  <section id="request-service" class="container">
+    <h2>Demander un Service</h2>
+    <p>Si vous souhaitez obtenir un service spécifique, remplissez ce formulaire et nous vous contacterons dans les plus brefs délais.</p>
+    <form action="https://formspree.io/f/your-email" method="POST">
+      <input type="text" name="name" placeholder="Nom complet" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Détail de la demande" rows="4" required></textarea>
+      <button type="submit" class="btn">Envoyer la demande</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Sev'Pro Agency. Tous droits réservés.</p>
+      <p><a href="#">Politique de confidentialité</a> | <a href="#">Mentions légales</a> | <a href="#">Conditions d'utilisation</a></p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(el => {
+      el.addEventListener('click', () => {
+        const answer = el.nextElementSibling;
+        answer.classList.toggle('show');
+      });
+    });
+  </script>
+
+</body></html>
